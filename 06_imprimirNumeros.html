@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que pergunte ao usuário um número inicial e um número final. Verifique se o número inicial é menor que o número 
+    final e apresente na tela os números ímpares e os números pares que estão entre os dois números. Se o número inicial for maior ou igual
+     ao número final, apresente mensagem de erro para o usuário, informando a regra para o número inicial e número final.
+    */
+
+  const nUm = Number(prompt("Diga um número"));
+  const nDois = Number(prompt("diga outro número"));
+
+    let impar = [];
+    let par = [];
+
+
+    for(let contador = 1; contador <= nDois; contador++){
+        (nUm > nDois) ? alert(`Numeros incorretos`)
+        : (contador % 2 === 0) ? par.push(contador)
+        : impar.push(contador);
+    }
+document.write(`pares: ${par} <br> impares: ${impar}`)
+
+</script>
